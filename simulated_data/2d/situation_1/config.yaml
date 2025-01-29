@@ -1,0 +1,23 @@
+data:
+    base_path: ''
+    train_path: 'simulated_data/2d/situation_1/X_100d-7.csv'
+    test_path: ''
+    save_path: 'results/situation_1' #'results/2d/situation_1_100d'
+    par: 'sim'
+    file_str: 'par-0{par}_CV-Kfold-{fold}_VAEwClass_klb-{klb}_cb-{clb}_mse-{mse_beta}_ld-{ld}_{arch}_{file}'
+    target: 'labels'
+arch_params:
+    latent_dim: 2
+    encoder_archs: [[],[25]]
+    class_archs: [[],[4,3]]
+    encoder_act: 'nn.Tanh'
+    classifier_act: 'nn.ReLU'
+params:
+    batch_size: 16
+    epochs: 1500
+    kl_beta: 1
+    drop_out: 0
+    learning_rate: 1e-4
+    mse_beta: 1
+    classification_loss_betas: [0,1,10,100,500,-1]
+    seed_vals: [0]
