@@ -19,7 +19,6 @@ def load_config(config_path):
     return config
 
 def calc_and_flatten_dist_matrix(points):
-    # Method 1: Using scipy.spatial.distance.cdist
     distance_matrix = cdist(points, points, metric='euclidean')
     
     row_indices, col_indices = np.tril_indices_from(distance_matrix, k=-1)
