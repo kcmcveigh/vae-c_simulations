@@ -112,14 +112,14 @@ if __name__ == "__main__":
     
     projected_4 = np.dot(data_situation_4, projection_coeffs)
     
-    np.savetxt(f'simulated_data/2d/situation_1/X_100d-{seed}1.csv',projected_1)
-    np.savetxt(f'simulated_data/2d/situation_1/latent_X_seed-{seed}1.csv',data_situation_1)
+    np.savetxt(f'simulated_data/2d/situation_1/X_100d-{seed}.csv',projected_1)
+    np.savetxt(f'simulated_data/2d/situation_1/latent_X_seed-{seed}.csv',data_situation_1)
 
-    np.savetxt(f'simulated_data/2d/situation_2/X_100d-{seed}1.csv',projected_2)
-    np.savetxt(f'simulated_data/2d/situation_2/latent_X_seed-{seed}1.csv',data_situation_2)
+    np.savetxt(f'simulated_data/2d/situation_2/X_100d-{seed}.csv',projected_2)
+    np.savetxt(f'simulated_data/2d/situation_2/latent_X_seed-{seed}.csv',data_situation_2)
 
-#     np.savetxt(f'simulated_data/2d/situation_3/X_100d-{seed}1.csv',projected_3)
-#     np.savetxt(f'simulated_data/2d/situation_3/latent_X_seed-{seed}1.csv',data_situation_3)
+    np.savetxt(f'simulated_data/2d/situation_3/X_100d-{seed}1.csv',projected_3)
+    np.savetxt(f'simulated_data/2d/situation_3/latent_X_seed-{seed}1.csv',data_situation_3)
 
-#     np.savetxt(f'simulated_data/2d/situation_4/X_100d-{seed}1.csv',projected_4)
-#     np.savetxt(f'simulated_data/2d/situation_4/latent_X_seed-{seed}1.csv',data_situation_4)
+    np.savetxt(f'simulated_data/2d/situation_4/X_100d-{seed}1.csv',projected_4)
+    np.savetxt(f'simulated_data/2d/situation_4/latent_X_seed-{seed}1.csv',data_situation_4)
