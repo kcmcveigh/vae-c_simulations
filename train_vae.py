@@ -140,7 +140,7 @@ for seed_val in seed_vals:#loop across seed vals
                         seed_val=seed_val,
                         drop_out=drop_out
                     )
-                    print(arch_str)
+                    
                     loss_save_path = save_str.format(
                         par  = par,
                         fold = fold_idx,
@@ -151,7 +151,9 @@ for seed_val in seed_vals:#loop across seed vals
                         arch = arch_str,
                         file = 'loss_log1.csv'
                     )
+                    
                     loss_df.to_csv(loss_save_path)
+                    
                     model_state_dict = copy.deepcopy(vae.state_dict())
                     model_save_path = save_str.format(
                         par  = par,
