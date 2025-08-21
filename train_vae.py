@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 import torch
 from torch import nn
 
-sys.path.append("../")
 from helpers import models, visualization_helper, pytorch_helpers
 
 def load_config(config_path):
