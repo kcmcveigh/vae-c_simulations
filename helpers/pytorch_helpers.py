@@ -6,7 +6,6 @@ from collections import namedtuple
 import pandas as pd
 from sklearn.metrics import accuracy_score, f1_score, r2_score
 from tqdm import tqdm
-import wandb
 # Named tuple to represent validation loss information
 ValidLossInfo = namedtuple('ValidLossInfo', ['valid_acc', 'valid_mse', 'valid_class_loss'])
 
