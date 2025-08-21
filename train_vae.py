@@ -33,10 +33,9 @@ save_str =  os.path.join(base_path,data_info['save_path'],data_info['file_str'])
 
 #training params
 param_info = config['params']
-epochs = 12# param_info['epochs']
+epochs = param_info['epochs']
 kl_beta= param_info['kl_beta']
 classification_loss_betas=param_info['classification_loss_betas']
-print(classification_loss_betas)
 
 recon_class_ratio = 0
 mse_beta=param_info['mse_beta']
